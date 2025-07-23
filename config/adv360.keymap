@@ -43,7 +43,7 @@
         compatible = "zmk,combos";
 
         escape {
-            bindings = <&kp ESCAPE>;
+            bindings = <&esc_en>;
             key-positions = <16 17>;
             layers = <0>;
         };
@@ -81,6 +81,13 @@
             #binding-cells = <0>;
             bindings = <&kp LA(LC(LS(N2))) &tog 0>;
             label = "TO_EN";
+        };
+
+        esc_en: esc_en {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &to_en>;
+            label = "ESC_EN";
         };
     };
 
