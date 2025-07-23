@@ -61,6 +61,13 @@
             bindings = <&kp LA(LEFT_ARROW) &kp LA(LS(RIGHT))>;
             label = "SELECT_WORD";
         };
+
+        code_md: code_md {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp GRAVE &kp GRAVE &kp LA(RET) &kp LG(V) &kp GRAVE &kp GRAVE &kp GRAVE>;
+            label = "CODE_MD";
+        };
     };
 
     keymap {
@@ -80,22 +87,22 @@
         keypad {
             display-name = "Kp";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3        &kp N4     &kp N5  &trans                                          &mo 3      &kp TILDE  &kp CARET  &kp HASH   &kp DOLLAR  &kp EXCLAMATION  &kp AT
-&kp TAB    &kp Q      &kp W     &kp E         &kp R      &kp T   &none                                           &none      &kp LS(G)  &kp KP_N7  &kp KP_N8  &kp KP_N9   &kp COLON        &kp PRCNT
-&kp ESC    &kp A      &kp S     &kp D         &kp F      &kp G   &none   &none  &none      &none      &kp EQUAL  &none      &kp K      &kp KP_N4  &kp KP_N5  &kp KP_N6   &kp MINUS        &kp PLUS
-&kp LSHFT  &kp Z      &kp X     &select_word  &kp V      &kp B                  &none      &none                            &kp J      &kp KP_N1  &kp KP_N2  &kp KP_N3   &kp SLASH        &kp STAR
-&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT      &kp RIGHT          &none   &none  &none      &kp COMMA  &kp DOT    &kp KP_N0             &kp UP     &kp DOWN   &kp KP_DOT  &kp RBKT         &kp PIPE
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                          &mo 3      &kp TILDE  &kp CARET  &kp HASH   &kp DOLLAR  &kp EXCLAMATION  &kp AT
+&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                           &none      &kp LS(G)  &kp KP_N7  &kp KP_N8  &kp KP_N9   &kp COLON        &kp PRCNT
+&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none   &none  &none      &none      &kp EQUAL  &none      &kp K      &kp KP_N4  &kp KP_N5  &kp KP_N6   &kp MINUS        &kp PLUS
+&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                  &none      &none                            &kp J      &kp KP_N1  &kp KP_N2  &kp KP_N3   &kp SLASH        &kp STAR
+&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &none   &none  &none      &kp COMMA  &kp DOT    &kp KP_N0             &kp UP     &kp DOWN   &kp KP_DOT  &kp RBKT         &kp PIPE
             >;
         };
 
         sym {
             display-name = "sym";
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                      &mo 3   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
+&kp F1    &kp F2            &kp F3                &kp F4                 &kp F5             &kp F6     &tog 1                                            &mo 3   &kp F7  &kp F8  &kp F9    &kp F10  &kp F11  &kp F12
+&kp EXCL  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp QMARK  &none                                             &none   &trans  &trans  &trans    &trans   &trans   &trans
+&kp HASH  &kp COMMA         &kp LBRC              &kp RBRC               &kp SEMICOLON      &kp STAR   &none      &trans     &trans      &trans  &trans  &none   &trans  &trans  &code_md  &trans   &trans   &trans
+&trans    &kp CARET         &kp EQUAL             &kp UNDER              &kp DOLLAR         &kp SLASH                        &trans      &trans                  &trans  &trans  &trans    &trans   &trans   &trans
+&trans    &kp LT            &kp PIPE              &kp MINUS              &kp GT                        &kp PRCNT  &kp COLON  &trans      &trans  &trans  &trans          &trans  &trans    &trans   &trans   &trans
             >;
         };
 
