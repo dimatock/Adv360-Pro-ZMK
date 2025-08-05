@@ -112,7 +112,7 @@
 &kp GRAVE       &kp Q            &kp W            &kp F                &kp P              &kp B       &kp LA(LC(LEFT))                                                                         &kp LA(LC(RIGHT))  &kp J       &kp L               &kp U                 &kp Y             &kp SEMICOLON     &kp BSLH
 &to_ru          &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T  &kp G       &kp LA(LC(R))     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL                          &kp LA(LC(ENTER))  &kp M       &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RIGHT_GUI O  &kp SQT
 &sk LEFT_SHIFT  &kp Z            &kp X            &kp C                &kp D              &kp V                                    &kp HOME      &kp PG_UP                                                        &kp K       &kp H               &kp COMMA             &kp DOT           &kp FSLH          &kp RSHFT
-&to 5           &kp GRAVE        &caps_word       &kp LEFT             &kp RIGHT                      &lt 2 SPACE       &kp TAB    &kp END       &kp PG_DN  &hmr LA(LC(LG(LEFT_SHIFT))) ENTER  &lt 3 BACKSPACE                &kp UP              &kp DOWN              &kp LBKT          &kp RBKT          &mo 3
+&to 5           &kp GRAVE        &caps_word       &kp LEFT             &kp RIGHT                      &lt 2 SPACE       &kp TAB    &kp END       &kp PG_DN  &hmr LA(LC(LG(LEFT_SHIFT))) ENTER  &lt 3 BACKSPACE                &kp DOWN_ARROW      &kp UP_ARROW          &kp LBKT          &kp RBKT          &mo 3
             >;
         };
 
@@ -129,11 +129,11 @@
         keypad {
             display-name = "Kp";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                          &mo 4      &kp TILDE  &kp CARET  &kp HASH   &kp DOLLAR  &kp EXCLAMATION  &kp AT
-&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T   &none                                           &none      &kp LS(G)  &kp KP_N7  &kp KP_N8  &kp KP_N9   &kp COLON        &kp PRCNT
-&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &none   &none  &none      &none      &kp EQUAL  &none      &kp K      &kp KP_N4  &kp KP_N5  &kp KP_N6   &kp MINUS        &kp PLUS
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                  &none      &none                            &kp J      &kp KP_N1  &kp KP_N2  &kp KP_N3   &kp SLASH        &kp STAR
-&mo 3      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &none   &none  &none      &kp COMMA  &kp DOT    &kp KP_N0             &kp UP     &kp DOWN   &kp KP_DOT  &kp RBKT         &kp PIPE
+&kp EQUAL  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &trans                                          &mo 4      &kp TILDE  &kp CARET  &kp HASH   &kp DOLLAR  &kp EXCLAMATION  &kp AT
+&kp TAB    &kp Q   &kp W   &kp E   &kp R   &kp T   &none                                           &none      &kp LS(G)  &kp KP_N7  &kp KP_N8  &kp KP_N9   &kp COLON        &kp PRCNT
+&kp ESC    &kp A   &kp S   &kp D   &kp F   &kp G   &none   &none  &none      &none      &kp EQUAL  &none      &kp K      &kp KP_N4  &kp KP_N5  &kp KP_N6   &kp MINUS        &kp PLUS
+&kp LSHFT  &kp Z   &kp X   &kp C   &kp V   &kp B                  &none      &none                            &kp J      &kp KP_N1  &kp KP_N2  &kp KP_N3   &kp SLASH        &kp STAR
+&mo 3      &trans  &trans  &trans  &trans          &none   &none  &none      &kp COMMA  &kp DOT    &kp KP_N0             &trans     &trans     &kp KP_DOT  &kp RBKT         &kp PIPE
             >;
         };
 
