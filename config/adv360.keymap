@@ -38,13 +38,12 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 39 40 41 42 43 44 45 54 55 56 57 58 59 71 72 73 74 75>;
         };
-        smart_sticky_layer: smart_sticky_layer {
+        sl_num_kp: sl_num_kp {
             compatible = "zmk,behavior-auto-layer";
             #binding-cells = <1>;
-            continue-list = <LEFT DOWN UP RIGHT BSPC DEL DOT COMMA MINUS UNDER>;
+            continue-list = <LEFT DOWN UP RIGHT BSPC DEL DOT COMMA MINUS UNDER GRAVE LEFT_PARENTHESIS EQUAL RIGHT_PARENTHESIS QMARK HASH CARET LBRC DOLLAR RIGHT_BRACE STAR LT PIPE GT SLASH PRCNT>;
             ignore-modifiers;
             ignore-numbers;
-            ignore-alphas;
         };
     };
 
@@ -117,11 +116,11 @@
         en {
             display-name = "en";
             bindings = <
-&kp EQUAL       &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)  &tog 2                                                                                             &mo 4              &kp LS(N6)  &kp LS(N7)    &kp LS(N8)      &kp LS(N9)  &kp LS(N0)     &kp MINUS
+&kp EQUAL       &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp PRCNT  &tog 2                                                                                             &mo 4              &kp LS(N6)  &kp LS(N7)    &kp LS(N8)      &kp LS(N9)  &kp LS(N0)     &kp MINUS
 &kp TAB         &kp Q       &kp W       &kp F       &kp P       &kp B       &kp LA(LC(LEFT))                                                                                   &kp LA(LC(RIGHT))  &kp J       &kp L         &kp U           &kp Y       &kp SEMICOLON  &kp BSLH
 &to_ru          &kp A       &kp R       &kp S       &kp T       &kp G       &kp LA(LC(R))     &kp LEFT_META  &kp LALT       &kp RIGHT_META  &kp LEFT_CONTROL                   &kp LA(LC(ENTER))  &kp M       &kp N         &kp E           &kp I       &kp O          &kp SQT
 &sk LEFT_SHIFT  &kp Z       &kp X       &kp C       &kp D       &kp V                                        &kp HOME       &kp PG_UP                                                             &kp K       &kp H         &kp COMMA       &kp DOT     &kp FSLH       &kp RSHFT
-&smart_sticky_layer 2           &kp GRAVE   &caps_word  &kp LEFT    &kp RIGHT               &lt 2 SPACE       &kp TAB        &kp COMMA      &kp DOT         &hmr LA(LC(LG(LEFT_SHIFT))) ENTER  &lt 3 BACKSPACE                &kp UP_ARROW  &kp DOWN_ARROW  &kp LBKT    &kp RBKT       &smart_sticky_layer 3
+&sl_num_kp 2           &kp GRAVE   &caps_word  &kp LEFT    &kp RIGHT               &lt 2 SPACE       &kp TAB        &kp COMMA      &kp DOT         &hmr LA(LC(LG(LEFT_SHIFT))) ENTER  &lt 3 BACKSPACE                &kp UP_ARROW  &kp DOWN_ARROW  &kp LBKT    &kp RBKT       &ssl_sym 3
             >;
         };
 
@@ -136,24 +135,13 @@
         };
 
         keypad {
-            display-name = "Kp";
+            display-name = "kp";
             bindings = <
-&kp EQUAL  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &trans                                          &mo 4      &kp TILDE  &kp CARET  &kp HASH   &kp DOLLAR  &kp EXCLAMATION  &kp AT
-&kp TAB    &kp Q   &kp W   &kp E   &kp R   &kp T   &none                                           &none      &kp LS(G)  &kp KP_N7  &kp KP_N8  &kp KP_N9   &kp COLON        &kp PRCNT
-&kp ESC    &kp A   &kp S   &kp D   &kp F   &kp G   &none   &none  &none      &none      &kp EQUAL  &none      &kp K      &kp KP_N4  &kp KP_N5  &kp KP_N6   &kp MINUS        &kp PLUS
-&kp LSHFT  &kp Z   &kp X   &kp C   &kp V   &kp B                  &none      &none                            &kp J      &kp KP_N1  &kp KP_N2  &kp KP_N3   &kp SLASH        &kp STAR
+&trans    &trans     &trans                &trans      &trans                 &trans     &trans      &trans     &trans     &trans     &trans     &trans     &trans           &trans
+&trans    &kp GRAVE  &kp LEFT_PARENTHESIS  &kp EQUAL   &kp RIGHT_PARENTHESIS  &kp QMARK  &none       &none      &kp LS(G)  &kp KP_N7  &kp KP_N8  &kp KP_N9   &kp COLON        &kp PRCNT
+&kp HASH  &kp CARET  &kp LBRC              &kp DOLLAR  &kp RIGHT_BRACE        &kp STAR   &none       &none      &kp K      &kp KP_N4  &kp KP_N5  &kp KP_N6   &kp MINUS        &kp PLUS
+&trans    &kp LT     &kp PIPE              &kp MINUS   &kp GT                 &kp SLASH             &none      &kp J      &kp KP_N1  &kp KP_N2  &kp KP_N3   &kp SLASH        &kp STAR
 &mo 3      &trans  &trans  &trans  &trans          &none   &none  &none      &kp COMMA  &kp DOT    &kp KP_N0             &trans     &trans     &kp KP_DOT  &kp RBKT         &kp PIPE
-            >;
-        };
-
-        sym {
-            display-name = "sym";
-            bindings = <
-&kp F1    &kp F2     &kp F3                &kp F4      &kp F5                 &kp F6     &tog 2                                            &mo 4   &kp F7  &kp F8            &kp F9    &kp F10            &kp F11  &kp F12
-&trans    &kp GRAVE  &kp LEFT_PARENTHESIS  &kp EQUAL   &kp RIGHT_PARENTHESIS  &kp QMARK  &none                                             &none   &trans  &trans            &trans    &trans             &trans   &trans
-&kp HASH  &kp CARET  &kp LBRC              &kp DOLLAR  &kp RIGHT_BRACE        &kp STAR   &none      &trans     &trans      &trans  &trans  &none   &trans  &kp UNDER         &code_md  &trans             &trans   &trans
-&trans    &kp LT     &kp PIPE              &kp MINUS   &kp GT                 &kp SLASH                        &trans      &trans                  &trans  &kp LEFT_BRACKET  &trans    &kp RIGHT_BRACKET  &trans   &trans
-&trans    &trans     &trans                &trans      &trans                            &kp PRCNT  &kp COLON  &trans      &trans  &trans  &trans          &trans            &trans    &trans             &trans   &trans
             >;
         };
 
@@ -168,14 +156,5 @@
             >;
         };
 
-        typing {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans     &trans   &trans    &trans
-&trans  &kp Q   &kp W   &kp F   &kp P   &kp B   &trans                                      &trans  &kp J   &kp L   &kp U      &kp Y    &kp SEMI  &trans
-&trans  &kp A   &kp R   &kp S   &kp T   &kp G   &trans  &trans  &trans      &trans  &trans  &trans  &kp M   &kp N   &kp E      &kp I    &kp O     &trans
-&trans  &kp Z   &kp X   &kp C   &kp D   &kp V                   &trans      &trans                  &kp K   &kp H   &kp COMMA  &kp DOT  &kp FSLH  &trans
-&to 0   &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans     &trans   &trans    &trans
-            >;
-        };
     };
 };
