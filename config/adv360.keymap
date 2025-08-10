@@ -6,15 +6,6 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <behaviors/num_word.dtsi>
 
-#define TAPPING_TERM_MS 200
-
-// From: https://github.com/urob/zmk-config/
-// num-word, requires PR https://github.com/zmkfirmware/zmk/pull/1451
-// Adds arrows and shift to smart layer for more comfortable navigation/selection moves
-&num_word {
-  continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL RSHFT LEFT RIGHT UP DOWN>;
-};
-
 / {
     behaviors {
       #include "macros.dtsi"
@@ -47,12 +38,13 @@
             hold-trigger-on-release;
             hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 39 40 41 42 43 44 45 54 55 56 57 58 59 71 72 73 74 75>;
         };
-        smart_num: smart_num {
-            compatible = "zmk,behavior-hold-tap";
-            flavor = "balanced";
-            tapping-term-ms = <TAPPING_TERM_MS>;
-            bindings = <&mo>, <&kp>;
+        smart_sticky_layer: smart_sticky_layer {
+            compatible = "zmk,behavior-auto-layer";
             #binding-cells = <2>;
+            continue-list = <LEFT DOWN UP RIGHT BSPC DEL DOT COMMA MINUS UNDER>;
+            ignore-modifiers;
+            ignore-numbers;
+            ignore-alphas;
         };
     };
 
