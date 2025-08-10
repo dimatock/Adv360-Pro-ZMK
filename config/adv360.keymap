@@ -120,7 +120,7 @@
 &kp TAB         &kp Q       &kp W       &kp F       &kp P       &kp B       &kp LA(LC(LEFT))                                                                                   &kp LA(LC(RIGHT))  &kp J       &kp L         &kp U           &kp Y       &kp SEMICOLON  &kp BSLH
 &to_ru          &kp A       &kp R       &kp S       &kp T       &kp G       &kp LA(LC(R))     &kp LEFT_META  &kp LALT       &kp RIGHT_META  &kp LEFT_CONTROL                   &kp LA(LC(ENTER))  &kp M       &kp N         &kp E           &kp I       &kp O          &kp SQT
 &sk LEFT_SHIFT  &kp Z       &kp X       &kp C       &kp D       &kp V                                        &kp HOME       &kp PG_UP                                                             &kp K       &kp H         &kp COMMA       &kp DOT     &kp FSLH       &kp RSHFT
-&sl_num_kp 2           &kp GRAVE   &caps_word  &kp LEFT    &kp RIGHT               &lt 2 SPACE       &kp TAB        &kp COMMA      &kp DOT         &hmr LA(LC(LG(LEFT_SHIFT))) ENTER  &lt 3 BACKSPACE                &kp UP_ARROW  &kp DOWN_ARROW  &kp LBKT    &kp RBKT       &sl_num_kp 3
+&sl_num_kp 2           &kp GRAVE   &caps_word  &kp LEFT    &kp RIGHT               &lt 2 SPACE       &kp TAB        &kp COMMA      &kp DOT         &hmr LA(LC(LG(LEFT_SHIFT))) ENTER  &lt 3 BACKSPACE                &kp UP_ARROW  &kp DOWN_ARROW  &kp LBKT    &kp RBKT       &sl_num_kp 2
             >;
         };
 
