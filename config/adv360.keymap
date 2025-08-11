@@ -121,7 +121,7 @@
 &kp TAB         &kp Q       &kp W       &kp F       &kp P       &kp B      &kp LA(LC(LEFT))                                                                                   &kp LA(LC(RIGHT))  &kp J       &kp L         &kp U           &kp Y       &kp SEMICOLON  &kp BSLH
 &to_ru          &kp A       &kp R       &kp S       &kp T       &kp G      &kp LA(LC(R))     &kp LEFT_META  &kp LALT       &kp RIGHT_META  &kp LEFT_CONTROL                   &kp LA(LC(ENTER))  &kp M       &kp N         &kp E           &kp I       &kp O          &kp SQT
 &sk LEFT_SHIFT  &kp Z       &kp X       &kp C       &kp D       &kp V                                       &kp HOME       &kp PG_UP                                                             &kp K       &kp H         &kp COMMA       &kp DOT     &kp FSLH       &kp RSHFT
-&sl_num_kp 2    &kp GRAVE   &caps_word  &kp LEFT    &kp RIGHT              &lt 2 SPACE       &kp TAB        &kp COMMA      &kp DOT         &hmr LA(LC(LG(LEFT_SHIFT))) ENTER  &lt 2 BACKSPACE                &kp UP_ARROW  &kp DOWN_ARROW  &kp LBKT    &kp RBKT       &sl_num_kp 2
+&sl_num_kp 2    &kp GRAVE   &caps_word  &kp LEFT    &kp RIGHT              &lt 2 SPACE       &kp &sl_num_kp 2        &kp COMMA      &kp DOT         &hmr LA(LC(LG(LEFT_SHIFT))) ENTER  &lt 2 BACKSPACE                &kp UP_ARROW  &kp DOWN_ARROW  &kp LBKT    &kp RBKT       &sl_num_kp 2
             >;
         };
 
@@ -142,7 +142,7 @@
 &trans    &kp GRAVE  &kp LEFT_PARENTHESIS  &kp EQUAL    &kp RIGHT_PARENTHESIS  &kp QMARK  &trans                                           &trans     &kp LS(G)  &kp KP_N7  &kp KP_N8  &kp KP_N9   &kp COLON  &kp PRCNT
 &kp HASH  &kp CARET  &kp LBRC              &kp DOLLAR   &kp RIGHT_BRACE        &kp STAR   &trans  &trans      &trans      &trans  &trans   &trans     &kp K      &kp KP_N4  &kp KP_N5  &kp KP_N6   &kp MINUS  &kp PLUS
 &trans    &kp LT     &kp PIPE              &kp MINUS    &kp GT                 &kp SLASH                      &trans      &trans                      &kp J      &kp KP_N1  &kp KP_N2  &kp KP_N3   &kp SLASH  &kp STAR
-&trans    &code_md   &kp TILDE             &kp PERCENT  &kp COLON                         &trans  &sl_num_kp  &trans      &trans  &kp DOT  &kp KP_N0             &trans     &trans     &kp KP_DOT  &trans     &trans
+&trans    &code_md   &kp TILDE             &kp PERCENT  &kp COLON                         &trans  &sl_num_kp 2  &trans      &trans  &kp DOT  &kp KP_N0             &trans     &trans     &kp KP_DOT  &trans     &trans
             >;
         };
 
