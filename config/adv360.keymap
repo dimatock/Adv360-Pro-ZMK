@@ -57,8 +57,8 @@
             layers = <0 1>;
         };
 
-        enter {
-            bindings = <&kp ENTER>;
+        tmux {
+            bindings = <&kp LC(B)>;
             key-positions = <24 25>;
             layers = <0 1>;
         };
