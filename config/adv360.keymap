@@ -117,7 +117,7 @@
         en {
             display-name = "en";
             bindings = <
-&kp EQUAL         &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp PRCNT  &tog 2                                                                           &mo 4              &kp LS(N6)  &kp LS(N7)    &kp LS(N8)            &kp LS(N9)  &kp LS(N0)     &kp MINUS
+&kp EQUAL         &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp PRCNT  &tog 2                                                                           &mo 5              &kp LS(N6)  &kp LS(N7)    &kp LS(N8)            &kp LS(N9)  &kp LS(N0)     &kp MINUS
 &kp TAB           &kp Q       &kp W       &kp F       &kp P       &kp B      &kp LA(LC(LEFT))                                                                 &kp LA(LC(RIGHT))  &kp J       &kp L         &kp U                 &kp Y       &kp SEMICOLON  &kp BSLH
 &to_ru            &kp A       &kp R       &kp S       &kp T       &kp G      &kp LA(LC(R))     &kp LEFT_META  &kp LALT      &kp RIGHT_META  &kp LEFT_CONTROL  &kp LA(LC(ENTER))  &kp M       &kp N         &hmr RIGHT_CONTROL E  &kp I       &kp O          &kp SQT
 &sk LEFT_SHIFT    &kp Z       &kp X       &kp C       &kp D       &kp V                                       &kp HOME      &kp PG_UP                                            &kp K       &kp H         &kp COMMA             &kp DOT     &kp FSLH       &kp RSHFT
@@ -153,6 +153,16 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        apps {
+            bindings = <
+&trans  &trans                 &trans  &trans  &trans                 &trans                 &trans                                      &trans  &trans                        &trans             &trans  &trans        &trans  &trans
+&trans  &trans                 &trans  &trans  &kp LS(LA(LC(LG(P))))  &kp LS(LA(LC(LG(B))))  &trans                                      &trans  &trans                        &trans             &trans  &trans        &trans  &trans
+&trans  &kp LS(LA(LC(LG(A))))  &trans  &trans  &trans                 &kp LS(LA(LC(LG(G))))  &trans  &trans  &trans      &trans  &trans  &trans  &trans                        &kp C_VOLUME_DOWN  &trans  &kp C_VOL_UP  &trans  &trans
+&trans  &kp LS(LA(LC(LG(Z))))  &trans  &trans  &kp LS(LA(LC(LG(D))))  &trans                                 &trans      &trans                  &kp LS(LG(LA(LC(NUMBER_3))))  &trans             &trans  &trans        &trans  &trans
+&trans  &trans                 &trans  &trans  &trans                                        &trans  &trans  &trans      &trans  &trans  &trans                                &trans             &trans  &trans        &trans  &trans
             >;
         };
 
