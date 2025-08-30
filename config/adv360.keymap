@@ -108,7 +108,15 @@
         keypad_en: keypad_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to_en &mo 2>;
+            bindings =
+                <&macro_press>,
+                <&to_en>,
+                <&macro_press>,
+                <&mo 2>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mo 2>;
+
             label = "KEYPAD_EN";
         };
 
@@ -127,10 +135,10 @@
             display-name = "en";
             bindings = <
 &kp EQUAL         &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp PRCNT  &tog 2                                                                           &mo 5              &kp LS(N6)  &kp LS(N7)    &kp LS(N8)            &kp LS(N9)        &kp LS(N0)     &kp MINUS
-&kp TAB           &kp Q       &kp W       &kp F       &kp P       &kp B      &kp LA(LC(LEFT))                                                                 &kp LA(LC(RIGHT))  &kp J       &kp L         &kp U                 &kp Y             &kp SEMICOLON  &kp BACKSPACE
+&kp TAB           &kp Q       &kp W       &kp F       &kp P       &kp B      &kp LA(LC(LEFT))                                                                 &kp LA(LC(RIGHT))  &kp J       &kp L         &kp U                 &kp Y             &kp SEMICOLON  &kp BSLH
 &to_ru            &kp A       &kp R       &kp S       &kp T       &kp G      &kp LA(LC(R))     &kp LEFT_META  &kp LALT      &kp RIGHT_META  &kp LEFT_CONTROL  &kp LA(LC(ENTER))  &kp M       &kp N         &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &kp O          &kp SQT
 &sk LEFT_SHIFT    &kp Z       &kp X       &kp C       &kp D       &kp V                                       &kp HOME      &kp PG_UP                                            &kp K       &kp H         &kp COMMA             &kp DOT           &kp FSLH       &kp RSHFT
-&kp LG(NUMBER_1)  &kp GRAVE   &caps_word  &kp LEFT    &kp RIGHT              &kp SPACE         &keypad_en     &kp END       &kp PG_DN       &lt 3 ENTER       &sym_en                        &kp UP_ARROW  &kp DOWN_ARROW        &kp LBKT          &kp RBKT       &kp LA(F12)
+&kp LG(NUMBER_1)  &kp GRAVE   &caps_word  &kp LEFT    &kp RIGHT              &kp SPACE         &keypad_en     &kp END       &kp PG_DN       &lt 3 ENTER       &kp BACKSPACE                  &kp UP_ARROW  &kp DOWN_ARROW        &kp LBKT          &kp RBKT       &kp LA(F12)
             >;
         };
 
