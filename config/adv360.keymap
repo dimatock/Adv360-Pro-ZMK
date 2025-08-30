@@ -149,11 +149,11 @@
         sym {
             display-name = "sym";
             bindings = <
-&trans    &trans     &trans                &trans       &trans                 &trans     &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans    &kp GRAVE  &kp LEFT_PARENTHESIS  &kp EQUAL    &kp RIGHT_PARENTHESIS  &kp QMARK  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp HASH  &kp CARET  &kp LBRC              &kp DOLLAR   &kp RIGHT_BRACE        &kp STAR   &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans    &kp LT     &kp PIPE              &kp MINUS    &kp GT                 &kp SLASH                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans    &code_md   &kp TILDE             &kp PERCENT  &kp COLON                         &trans  &trans  &trans      &trans  &trans  &trans           &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans    &trans    &trans    &trans    &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp EXCL  &kp TILDE &kp BSLH  &kp AMPS  &kp DLLR  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp UNDER &kp MINUS &kp PLUS  &kp EQUAL &kp PIPE  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LT    &kp GT    &kp COLON &kp SEMI  &kp QMARK &trans                      &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans    &trans    &trans            &trans  &trans  &trans      &trans  &trans  &trans           &trans  &trans  &trans  &trans  &trans
             >;
         };
 
