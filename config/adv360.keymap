@@ -138,22 +138,22 @@
         keypad {
             display-name = "kp";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans     &trans     &trans     &trans     &trans      &trans     &kp UNDER
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans     &kp LS(G)  &kp KP_N7  &kp KP_N8  &kp KP_N9   &kp COLON  &kp PRCNT
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans     &kp K      &kp KP_N4  &kp KP_N5  &kp KP_N6   &kp MINUS  &kp PLUS
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                     &kp J      &kp KP_N1  &kp KP_N2  &kp KP_N3   &kp SLASH  &kp STAR
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &kp KP_N0             &trans     &trans     &kp KP_DOT  &trans     &trans
             >;
         };
 
         sym {
             display-name = "sym";
             bindings = <
-&trans    &trans     &trans                &trans       &trans                 &trans     &trans                                      &trans     &trans     &trans     &trans     &trans      &trans     &kp UNDER
-&trans    &kp GRAVE  &kp LEFT_PARENTHESIS  &kp EQUAL    &kp RIGHT_PARENTHESIS  &kp QMARK  &trans                                      &trans     &kp LS(G)  &kp KP_N7  &kp KP_N8  &kp KP_N9   &kp COLON  &kp PRCNT
-&kp HASH  &kp CARET  &kp LBRC              &kp DOLLAR   &kp RIGHT_BRACE        &kp STAR   &trans  &trans  &trans      &trans  &trans  &trans     &kp K      &kp KP_N4  &kp KP_N5  &kp KP_N6   &kp MINUS  &kp PLUS
-&trans    &kp LT     &kp PIPE              &kp MINUS    &kp GT                 &kp SLASH                  &trans      &trans                     &kp J      &kp KP_N1  &kp KP_N2  &kp KP_N3   &kp SLASH  &kp STAR
-&trans    &code_md   &kp TILDE             &kp PERCENT  &kp COLON                         &trans  &trans  &trans      &trans  &trans  &kp KP_N0             &trans     &trans     &kp KP_DOT  &trans     &trans
+&trans    &trans     &trans                &trans       &trans                 &trans     &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &kp GRAVE  &kp LEFT_PARENTHESIS  &kp EQUAL    &kp RIGHT_PARENTHESIS  &kp QMARK  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp HASH  &kp CARET  &kp LBRC              &kp DOLLAR   &kp RIGHT_BRACE        &kp STAR   &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &kp LT     &kp PIPE              &kp MINUS    &kp GT                 &kp SLASH                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &code_md   &kp TILDE             &kp PERCENT  &kp COLON                         &trans  &trans  &trans      &trans  &trans  &trans           &trans  &trans  &trans  &trans  &trans
             >;
         };
 
