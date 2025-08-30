@@ -77,13 +77,6 @@
     };
 
     macros {
-        select_word: select_word {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(LEFT_ARROW) &kp LA(LS(RIGHT))>;
-            label = "SELECT_WORD";
-        };
-
         code_md: code_md {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -111,6 +104,13 @@
             bindings = <&kp ESCAPE &to_en>;
             label = "ESC_EN";
         };
+
+        keypad_en: keypad_en {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to_en &mo 2>;
+            label = "KEYPAD_EN";
+        };
     };
 
     keymap {
@@ -123,7 +123,7 @@
 &kp TAB           &kp Q       &kp W       &kp F       &kp P       &kp B      &kp LA(LC(LEFT))                                                                 &kp LA(LC(RIGHT))  &kp J       &kp L         &kp U                 &kp Y             &kp SEMICOLON  &kp BSLH
 &to_ru            &kp A       &kp R       &kp S       &kp T       &kp G      &kp LA(LC(R))     &kp LEFT_META  &kp LALT      &kp RIGHT_META  &kp LEFT_CONTROL  &kp LA(LC(ENTER))  &kp M       &kp N         &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &kp O          &kp SQT
 &sk LEFT_SHIFT    &kp Z       &kp X       &kp C       &kp D       &kp V                                       &kp HOME      &kp PG_UP                                            &kp K       &kp H         &kp COMMA             &kp DOT           &kp FSLH       &kp RSHFT
-&kp LG(NUMBER_1)  &kp GRAVE   &caps_word  &kp LEFT    &kp RIGHT              &kp SPACE         &mo 2          &kp END       &kp PG_DN       &lt 3 ENTER       &kp BACKSPACE                  &kp UP_ARROW  &kp DOWN_ARROW        &kp LBKT          &kp RBKT       &kp LA(F12)
+&kp LG(NUMBER_1)  &kp GRAVE   &caps_word  &kp LEFT    &kp RIGHT              &kp SPACE         &keypad_en     &kp END       &kp PG_DN       &lt 3 ENTER       &kp BACKSPACE                  &kp UP_ARROW  &kp DOWN_ARROW        &kp LBKT          &kp RBKT       &kp LA(F12)
             >;
         };
 
