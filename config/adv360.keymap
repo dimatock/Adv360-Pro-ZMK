@@ -41,12 +41,15 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 46 47 48 49 50 51 60 61 62 63 64>;
         };
 
-        sl_num_kp: sl_num_kp {
-            compatible = "zmk,behavior-auto-layer";
-            #binding-cells = <1>;
-            continue-list = <LEFT DOWN UP RIGHT BSPC DEL KP_DOT DOT COMMA MINUS UNDER GRAVE LEFT_PARENTHESIS EQUAL RIGHT_PARENTHESIS QMARK HASH CARET LBRC DOLLAR RIGHT_BRACE STAR LT PIPE GT COLON>;
-            ignore-modifiers;
-            ignore-numbers;
+        sticky_tap: sticky_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "STICKY_TAP";
+            bindings = <&lt>, <&sk>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <130>;
+            flavor = "tap-unless-interrupted";
+            hold-trigger-key-positions = <71 72 73 57 56 55 41 42 43 25 24 23>;
         };
     };
 
@@ -134,11 +137,11 @@
         en {
             display-name = "en";
             bindings = <
-&kp EQUAL         &kp LS(N1)        &kp LS(N2)       &kp LS(N3)           &kp LS(N4)         &kp PRCNT  &tog 2                                                                              &mo 5              &kp LS(N6)  &kp LS(N7)          &kp LS(N8)            &kp LS(N9)        &kp LS(N0)         &kp MINUS
-&kp TAB           &kp Q             &kp W            &kp F                &kp P              &kp B      &kp LA(LC(LEFT))                                                                    &kp LA(LC(RIGHT))  &kp J       &kp L               &kp U                 &kp Y             &kp SEMICOLON      &kp BSLH
-&to_ru            &hml LEFT_META A  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T  &kp G      &kp LA(LC(R))     &kp LEFT_META     &kp LALT      &kp RIGHT_META  &kp LEFT_CONTROL  &kp LA(LC(ENTER))  &kp M       &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RIGHT_META O  &kp SQT
-&sk LEFT_SHIFT    &kp Z             &kp X            &kp C                &kp D              &kp V                                          &kp HOME      &kp PG_UP                                            &kp K       &kp H               &kp COMMA             &kp DOT           &kp FSLH           &kp RSHFT
-&kp LG(NUMBER_1)  &kp GRAVE         &caps_word       &kp LEFT             &kp RIGHT                     &kp SPACE         &lt 2 LEFT_SHIFT  &kp END       &kp PG_DN       &lt 3 ENTER       &kp BACKSPACE                  &kp DOWN_ARROW      &kp UP_ARROW          &kp LBKT          &kp RBKT           &kp LA(F12)
+&kp EQUAL         &kp LS(N1)        &kp LS(N2)       &kp LS(N3)           &kp LS(N4)         &kp PRCNT  &tog 2                                                                                      &mo 5              &kp LS(N6)  &kp LS(N7)          &kp LS(N8)            &kp LS(N9)        &kp LS(N0)         &kp MINUS
+&kp TAB           &kp Q             &kp W            &kp F                &kp P              &kp B      &kp LA(LC(LEFT))                                                                            &kp LA(LC(RIGHT))  &kp J       &kp L               &kp U                 &kp Y             &kp SEMICOLON      &kp BSLH
+&to_ru            &hml LEFT_META A  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T  &kp G      &kp LA(LC(R))     &kp LEFT_META             &kp LALT      &kp RIGHT_META  &kp LEFT_CONTROL  &kp LA(LC(ENTER))  &kp M       &hmr RIGHT_SHIFT N  &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RIGHT_META O  &kp SQT
+&sk LEFT_SHIFT    &kp Z             &kp X            &kp C                &kp D              &kp V                                                  &kp HOME      &kp PG_UP                                            &kp K       &kp H               &kp COMMA             &kp DOT           &kp FSLH           &kp RSHFT
+&kp LG(NUMBER_1)  &kp GRAVE         &caps_word       &kp LEFT             &kp RIGHT                     &kp SPACE         &sticky_tap 2 LEFT_SHIFT  &kp END       &kp PG_DN       &lt 3 ENTER       &kp BACKSPACE                  &kp DOWN_ARROW      &kp UP_ARROW          &kp LBKT          &kp RBKT           &kp LA(F12)
             >;
         };
 
