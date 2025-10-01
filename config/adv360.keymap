@@ -168,11 +168,11 @@
         sym {
             display-name = "sym";
             bindings = <
-&trans  &trans     &trans     &trans     &trans     &trans     &trans                                      &trans  &trans  &trans     &trans     &trans  &trans      &trans
-&trans  &kp EXCL   &kp TILDE  &kp BSLH   &kp AMPS   &kp DLLR   &trans                                      &trans  &trans  &trans     &kp LC(U)  &trans  &trans      &trans
-&trans  &kp UNDER  &kp MINUS  &kp PLUS   &kp EQUAL  &kp PIPE   &trans  &trans  &trans      &trans  &trans  &trans  &kp H   &kp J      &kp K      &kp L   &kp DELETE  &trans
-&trans  &kp LT     &kp GT     &kp COLON  &kp SEMI   &kp QMARK                  &trans      &trans                  &trans  &kp LC(D)  &trans     &trans  &trans      &trans
-&trans  &trans     &trans     &trans     &trans                &trans  &trans  &trans      &trans  &none   &trans          &trans     &trans     &trans  &trans      &trans
+&trans  &trans     &trans     &trans     &trans     &trans     &trans                                      &trans  &trans    &trans     &trans     &trans  &trans  &trans
+&trans  &kp EXCL   &kp TILDE  &kp BSLH   &kp AMPS   &kp DLLR   &trans                                      &trans  &trans    &trans     &trans     &trans  &trans  &trans
+&trans  &kp UNDER  &kp MINUS  &kp PLUS   &kp EQUAL  &kp PIPE   &trans  &trans  &trans      &trans  &trans  &trans  &trans    &trans     &trans     &trans  &trans  &trans
+&trans  &kp LT     &kp GT     &kp COLON  &kp SEMI   &kp QMARK                  &trans      &trans                  &kp PIPE  &trans     &trans     &trans  &trans  &trans
+&trans  &trans     &trans     &trans     &trans                &trans  &trans  &trans      &trans  &none   &trans            &kp LC(U)  &kp LC(D)  &trans  &trans  &trans
             >;
         };
 
