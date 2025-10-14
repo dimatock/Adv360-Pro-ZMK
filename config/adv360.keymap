@@ -61,8 +61,8 @@
             layers = <0 1>;
         };
 
-        tmux {
-            bindings = <&kp LC(B)>;
+        sym {
+            bindings = <&sym_en>;
             key-positions = <24 25>;
             layers = <0 1>;
         };
@@ -82,7 +82,7 @@
         code_md: code_md {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GRAVE &kp GRAVE &kp GRAVE &kp LA(RET) &kp LG(V) &kp LA(ENTER) &kp GRAVE &kp GRAVE &kp GRAVE>;
+            bindings = <&to_en &kp GRAVE &kp GRAVE &kp GRAVE &kp LS(RET) &kp LG(V) &kp LS(ENTER) &kp GRAVE &kp GRAVE &kp GRAVE>;
             label = "CODE_MD";
         };
 
@@ -107,25 +107,10 @@
             label = "ESC_EN";
         };
 
-        keypad_en: keypad_en {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&to_en>,
-                <&macro_press>,
-                <&mo 3>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&mo 3>;
-
-            label = "KEYPAD_EN";
-        };
-
         sym_en: sym_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to_en &mo 4>;
+            bindings = <&to_en &sl 4>;
             label = "SYM_EN";
         };
     };
