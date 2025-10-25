@@ -159,11 +159,11 @@
         keypad {
             display-name = "kp";
             bindings = <
-&trans  &trans  &trans     &trans     &trans      &trans  &trans                                             &trans     &trans     &trans     &trans     &trans      &trans     &trans
-&trans  &trans  &trans     &trans     &trans      &trans  &trans                                             &trans     &kp LS(G)  &kp KP_N7  &kp KP_N8  &kp KP_N9   &kp MINUS  &trans
-&trans  &trans  &kp CARET  &kp LS(V)  &kp DOLLAR  &trans  &trans         &trans  &trans      &trans  &trans  &trans     &kp K      &kp KP_N4  &kp KP_N5  &kp KP_N6   &kp PLUS   &trans
-&trans  &trans  &trans     &trans     &trans      &trans                         &trans      &trans                     &kp J      &kp KP_N1  &kp KP_N2  &kp KP_N3   &trans     &trans
-&trans  &trans  &trans     &trans     &trans              &l7_off_space  &trans  &trans      &trans  &trans  &kp KP_N0             &kp N0     &kp N0     &kp KP_DOT  &trans     &trans
+&trans  &trans  &trans     &trans     &trans      &trans  &trans                                             &trans  &trans     &trans     &trans     &trans      &trans     &trans
+&trans  &trans  &trans     &trans     &trans      &trans  &trans                                             &trans  &kp LS(G)  &kp KP_N7  &kp KP_N8  &kp KP_N9   &kp MINUS  &trans
+&trans  &trans  &kp CARET  &kp LS(V)  &kp DOLLAR  &trans  &trans         &trans  &trans      &trans  &trans  &trans  &kp K      &kp KP_N4  &kp KP_N5  &kp KP_N6   &kp PLUS   &trans
+&trans  &trans  &trans     &trans     &trans      &trans                         &trans      &trans                  &kp J      &kp KP_N1  &kp KP_N2  &kp KP_N3   &trans     &trans
+&trans  &trans  &trans     &trans     &trans              &l7_off_space  &trans  &trans      &trans  &trans  &trans             &kp N0     &kp N0     &kp KP_DOT  &trans     &trans
             >;
         };
 
