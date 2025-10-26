@@ -46,7 +46,7 @@
             #binding-cells = <1>;
             continue-list = <BACKSPACE DELETE DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
             ignore-numbers;
-        }
+        };
 
     };
 
