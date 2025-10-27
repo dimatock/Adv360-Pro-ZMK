@@ -66,6 +66,16 @@
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <57 56>;
         };
+
+        lparen {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <23 24>;
+        };
+
+        lcurly {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <55 56>;
+        };
     };
 
     macros {
