@@ -153,11 +153,11 @@
         sym {
             display-name = "sym";
             bindings = <
-&trans  &trans         &trans     &trans     &trans            &trans  &trans                                      &trans  &trans  &trans            &trans  &trans             &trans  &trans
-&trans  &trans         &trans     &trans     &trans            &trans  &trans                                      &trans  &trans  &kp LEFT_BRACKET  &trans  &kp RIGHT_BRACKET  &trans  &trans
-&trans  &kp LESS_THAN  &kp PIPE   &kp MINUS  &kp GREATER_THAN  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp LEFT_BRACE    &trans  &kp RIGHT_BRACE    &trans  &trans
-&trans  &trans         &kp COLON  &kp EQUAL  &kp SEMI          &trans                  &trans      &trans                  &trans  &trans            &trans  &trans             &trans  &trans
-&trans  &trans         &trans     &trans     &trans                    &trans  &trans  &trans      &trans  &none   &trans          &trans            &trans  &trans             &trans  &trans
+&trans  &trans         &trans    &trans     &trans            &trans  &trans                                      &trans  &trans  &trans                 &trans  &trans                &trans  &trans
+&trans  &trans         &trans    &trans     &trans            &trans  &trans                                      &trans  &trans  &kp RIGHT_BRACKET      &trans  &kp LEFT_BRACKET      &trans  &trans
+&trans  &kp LESS_THAN  &kp PIPE  &kp MINUS  &kp GREATER_THAN  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp RIGHT_BRACE        &trans  &kp LEFT_BRACE        &trans  &trans
+&trans  &trans         &none     &kp COLON  &kp EQUAL         &trans                  &trans      &trans                  &trans  &kp RIGHT_PARENTHESIS  &trans  &kp LEFT_PARENTHESIS  &trans  &trans
+&trans  &trans         &trans    &trans     &trans                    &trans  &trans  &trans      &trans  &none   &trans          &trans                 &trans  &trans                &trans  &trans
             >;
         };
 
