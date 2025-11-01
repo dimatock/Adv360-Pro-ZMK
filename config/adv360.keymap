@@ -118,6 +118,13 @@
             bindings = <&to_en &sl 4>;
             label = "SYM_EN";
         };
+
+        to_en_kp: to_en_kp {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&to_en &kp LC(LS(NUMBER_1)) &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            label = "TO_EN_KP";
+        };
     };
 
     keymap {
