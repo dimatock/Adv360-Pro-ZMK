@@ -54,7 +54,7 @@
         sym {
             bindings = <&kp BACKSPACE>;
             key-positions = <24 25>;
-            layers = <0 1>;
+            layers = <0 1 4 3>;
         };
 
         d_quotes {
