@@ -137,7 +137,7 @@
 &kp TAB         &kp Q       &kp W            &kp F                &kp P            &kp B      &kp LA(LC(LEFT))                                                                          &kp LA(LC(RIGHT))  &kp J       &kp L             &kp U                 &kp Y             &kp SEMICOLON  &kp BSLH
 &to_ru          &kp A       &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml LEFT_GUI T  &kp G      &kp LA(LC(R))     &kp LS(LA(LC(LG(A))))  &none                      &none  &kp LG(SPACE)  &kp LA(LC(ENTER))  &kp M       &hmr RIGHT_GUI N  &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &kp O          &kp SQT
 &sk LEFT_SHIFT  &kp Z       &kp X            &kp C                &kp D            &kp V                                               &none                      &none                                    &kp K       &kp H             &kp COMMA             &kp DOT           &kp FSLH       &kp RSHFT
-&num_word 3     &kp GRAVE   &caps_word       &kp LEFT             &kp RIGHT                   &kp SPACE         &mo 3                  &kp LS(LA(LC(LG(B))))      &none  &to 4          &kp ENTER                      &kp DOWN_ARROW    &kp UP_ARROW          &kp LBKT          &kp RBKT       &to 2
+&num_word 3     &kp GRAVE   &caps_word       &kp LEFT             &kp RIGHT                   &kp SPACE         &to 3                  &kp LS(LA(LC(LG(B))))      &none  &to 4          &kp ENTER                      &kp DOWN_ARROW    &kp UP_ARROW          &kp LBKT          &kp RBKT       &to 2
             >;
         };
 
@@ -164,22 +164,22 @@
         keypad {
             display-name = "kp";
             bindings = <
-&trans  &trans  &trans     &trans     &trans      &trans  &trans                                      &trans  &trans     &trans     &trans     &trans      &trans     &trans
-&trans  &trans  &trans     &trans     &trans      &trans  &trans                                      &trans  &kp LS(G)  &kp KP_N7  &kp KP_N8  &kp KP_N9   &kp MINUS  &trans
-&trans  &trans  &kp CARET  &kp LS(V)  &kp DOLLAR  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp K      &kp KP_N4  &kp KP_N5  &kp KP_N6   &kp PLUS   &trans
-&trans  &trans  &trans     &trans     &trans      &trans                  &trans      &trans                  &kp J      &kp KP_N1  &kp KP_N2  &kp KP_N3   &trans     &trans
-&trans  &trans  &trans     &trans     &trans              &trans  &to_en  &trans      &trans  &to_en  &kp N0             &trans     &trans     &kp KP_DOT  &trans     &trans
+&trans  &trans  &trans     &trans     &trans      &trans  &trans                                               &trans  &trans     &trans     &trans     &trans      &trans     &trans
+&trans  &trans  &trans     &trans     &trans      &trans  &trans                                               &trans  &kp LS(G)  &kp KP_N7  &kp KP_N8  &kp KP_N9   &kp MINUS  &trans
+&trans  &trans  &kp CARET  &kp LS(V)  &kp DOLLAR  &trans  &trans           &trans  &trans      &trans  &trans  &trans  &kp K      &kp KP_N4  &kp KP_N5  &kp KP_N6   &kp PLUS   &trans
+&trans  &trans  &trans     &trans     &trans      &trans                           &trans      &trans                  &kp J      &kp KP_N1  &kp KP_N2  &kp KP_N3   &trans     &trans
+&trans  &trans  &trans     &trans     &trans              &to_en_kp SPACE  &to_en  &trans      &trans  &to_en  &kp N0             &trans     &trans     &kp KP_DOT  &trans     &trans
             >;
         };
 
         sym {
             display-name = "sym";
             bindings = <
-&trans  &trans         &trans    &trans     &trans            &trans  &trans                                      &trans  &trans  &trans                 &trans  &trans                &trans  &trans
-&trans  &trans         &trans    &trans     &trans            &trans  &trans                                      &trans  &trans  &kp RIGHT_BRACKET      &trans  &kp LEFT_BRACKET      &trans  &trans
-&trans  &kp LESS_THAN  &kp PIPE  &kp MINUS  &kp GREATER_THAN  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp RIGHT_BRACE        &trans  &kp LEFT_BRACE        &trans  &trans
-&trans  &trans         &none     &kp COLON  &kp EQUAL         &trans                  &trans      &trans                  &trans  &kp RIGHT_PARENTHESIS  &trans  &kp LEFT_PARENTHESIS  &trans  &trans
-&trans  &trans         &trans    &trans     &trans                    &trans  &to_en  &trans      &trans  &to_en  &trans          &trans                 &trans  &trans                &trans  &trans
+&trans  &trans         &trans    &trans     &trans            &trans  &trans                                               &trans           &trans  &trans                 &trans  &trans                &trans  &trans
+&trans  &trans         &trans    &trans     &trans            &trans  &trans                                               &trans           &trans  &kp RIGHT_BRACKET      &trans  &kp LEFT_BRACKET      &trans  &trans
+&trans  &kp LESS_THAN  &kp PIPE  &kp MINUS  &kp GREATER_THAN  &trans  &trans           &trans  &trans      &trans  &trans  &trans           &trans  &kp RIGHT_BRACE        &trans  &kp LEFT_BRACE        &trans  &trans
+&trans  &trans         &none     &kp COLON  &kp EQUAL         &trans                           &trans      &trans                           &trans  &kp RIGHT_PARENTHESIS  &trans  &kp LEFT_PARENTHESIS  &trans  &trans
+&trans  &trans         &trans    &trans     &trans                    &to_en_kp SPACE  &to_en  &trans      &trans  &to_en  &to_en_kp ENTER          &trans                 &trans  &trans                &trans  &trans
             >;
         };
 
