@@ -175,11 +175,11 @@
         sym {
             display-name = "sym";
             bindings = <
-&trans  &trans         &trans    &trans     &trans            &trans  &trans                                               &trans           &trans  &trans                 &trans  &trans                &trans  &trans
-&trans  &trans         &trans    &trans     &trans            &trans  &trans                                               &trans           &trans  &kp RIGHT_BRACKET      &trans  &kp LEFT_BRACKET      &trans  &trans
-&trans  &kp LESS_THAN  &kp PIPE  &kp MINUS  &kp GREATER_THAN  &trans  &trans           &trans  &trans      &trans  &trans  &trans           &trans  &kp RIGHT_BRACE        &trans  &kp LEFT_BRACE        &trans  &trans
-&trans  &trans         &none     &kp COLON  &kp EQUAL         &trans                           &trans      &trans                           &trans  &kp RIGHT_PARENTHESIS  &trans  &kp LEFT_PARENTHESIS  &trans  &trans
-&trans  &trans         &trans    &trans     &trans                    &to_en_kp SPACE  &to_en  &trans      &trans  &to_en  &to_en_kp ENTER          &trans                 &trans  &trans                &trans  &trans
+&trans     &trans            &trans          &trans           &trans             &trans     &trans                                                      &trans           &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &trans     &trans                                                      &trans           &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &kp CARET         &kp EQUAL       &kp UNDER        &kp DOLLAR         &trans     &trans           &kp BACKSLASH  &trans      &trans  &trans  &trans           &trans  &trans  &trans  &trans  &trans  &trans
+&kp TILDE  &kp LESS_THAN     &kp PIPE        &kp MINUS        &kp GREATER_THAN   &kp SLASH                                  &trans      &trans                           &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans            &trans          &trans           &trans                        &to_en_kp SPACE  &kp COLON      &trans      &trans  &to_en  &to_en_kp ENTER          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
