@@ -52,8 +52,8 @@
         };
 
         sym {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <24 25>;
+            bindings = <&sym_en>;
+            key-positions = <43 30>;
             layers = <0 1 4 3>;
         };
 
@@ -115,7 +115,7 @@
         sym_en: sym_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to_en &sl 4>;
+            bindings = <&to_en &to 4>;
             label = "SYM_EN";
         };
 
@@ -137,7 +137,7 @@
 &kp TAB         &kp Q       &kp W            &kp F                &kp P            &kp B      &kp LA(LC(LEFT))                                                                          &kp LA(LC(RIGHT))  &kp J       &kp L             &kp U                 &kp Y             &kp SEMICOLON  &kp BSLH
 &to_ru          &kp A       &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml LEFT_GUI T  &kp G      &kp LA(LC(R))     &kp LS(LA(LC(LG(A))))  &none                      &none  &kp LG(SPACE)  &kp LA(LC(ENTER))  &kp M       &hmr RIGHT_GUI N  &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &kp O          &kp SQT
 &sk LEFT_SHIFT  &kp Z       &kp X            &kp C                &kp D            &kp V                                               &none                      &none                                    &kp K       &kp H             &kp COMMA             &kp DOT           &kp FSLH       &kp RSHFT
-&num_word 3     &kp GRAVE   &caps_word       &kp LEFT             &kp RIGHT                   &kp SPACE         &to 3                  &kp LS(LA(LC(LG(B))))      &none  &to 4          &kp ENTER                      &kp DOWN_ARROW    &kp UP_ARROW          &kp LBKT          &kp RBKT       &to 2
+&num_word 3     &kp GRAVE   &caps_word       &kp LEFT             &kp RIGHT                   &kp SPACE         &to 3                  &kp LS(LA(LC(LG(B))))      &none  &kp ENTER      &kp BACKSPACE                  &kp DOWN_ARROW    &kp UP_ARROW          &kp LBKT          &kp RBKT       &to 2
             >;
         };
 
@@ -175,11 +175,11 @@
         sym {
             display-name = "sym";
             bindings = <
-&trans     &trans            &trans          &trans           &trans             &trans     &trans                                                      &trans           &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &trans     &trans                                                      &trans           &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &kp CARET         &kp EQUAL       &kp UNDER        &kp DOLLAR         &trans     &trans           &kp BACKSLASH  &trans      &trans  &trans  &trans           &trans  &trans  &trans  &trans  &trans  &trans
-&kp TILDE  &kp LESS_THAN     &kp PIPE        &kp MINUS        &kp GREATER_THAN   &kp SLASH                                  &trans      &trans                           &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans            &trans          &trans           &trans                        &to_en_kp SPACE  &kp COLON      &trans      &trans  &to_en  &to_en_kp ENTER          &trans  &trans  &trans  &trans  &trans
+&trans     &trans            &trans          &trans           &trans             &trans     &trans                                                        &trans           &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &trans     &trans                                                        &trans           &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &kp CARET         &kp EQUAL       &kp UNDER        &kp DOLLAR         &trans     &trans           &kp BACKSLASH    &trans      &trans  &trans  &trans           &trans  &trans  &trans  &trans  &trans  &trans
+&kp TILDE  &kp LESS_THAN     &kp PIPE        &kp MINUS        &kp GREATER_THAN   &kp SLASH                                    &trans      &trans                           &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans            &trans          &trans           &trans                        &to_en_kp SPACE  &to_en_kp COLON  &trans      &trans  &to_en  &to_en_kp ENTER          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
