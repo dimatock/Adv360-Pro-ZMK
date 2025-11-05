@@ -168,7 +168,7 @@
 &trans     &trans            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans             &trans         &trans                                                           &trans  &trans             &trans   &trans  &trans  &trans     &trans
 &trans     &kp LEFT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp RIGHT_BRACKET  &kp SEMICOLON  &trans                                                           &trans  &trans             &trans   &trans  &trans  &trans     &trans
 &trans     &kp CARET         &kp EQUAL             &kp UNDER              &kp DOLLAR         &trans         &trans     &kp BACKSLASH    &trans      &trans  &trans           &trans  &kp DOUBLE_QUOTES  &kp TAB  &trans  &trans  &kp ENTER  &trans
-&kp TILDE  &kp LESS_THAN     &kp PIPE              &kp MINUS              &kp GREATER_THAN   &kp SLASH                                  &trans      &trans                           &kp SQT            &trans   &trans  &trans  &trans     &trans
+&kp TILDE  &kp LESS_THAN     &kp PIPE              &kp MINUS              &kp GREATER_THAN   &kp SLASH                                  &trans      &trans                           &kp SQT            &trans   &trans  &trans  &trans     &tog 3
 &trans     &trans            &trans                &trans                 &trans                            &kp SPACE  &to_en_kp COLON  &trans      &trans  &to_en_kp ENTER  &trans                     &trans   &trans  &trans  &trans     &trans
             >;
         };
