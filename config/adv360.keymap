@@ -144,7 +144,7 @@
 &kp TAB           &kp Q              &kp W            &kp F                &kp P            &kp B      &kp LA(LC(LEFT))                                                                          &kp LA(LC(RIGHT))  &kp J       &kp L             &kp U                 &kp Y             &kp SEMICOLON       &kp BSLH
 &to_ru            &hml LEFT_SHIFT A  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml LEFT_GUI T  &kp G      &kp LA(LC(R))     &kp LS(LA(LC(LG(A))))  &none                      &none  &kp LG(SPACE)  &kp LA(LC(ENTER))  &kp M       &hmr RIGHT_GUI N  &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RIGHT_SHIFT O  &kp SQT
 &sk LEFT_SHIFT    &kp Z              &kp X            &kp C                &kp D            &kp V                                               &none                      &none                                    &kp K       &kp H             &kp COMMA             &kp DOT           &kp FSLH            &tog 3
-&kp LG(NUMBER_1)  &kp GRAVE          &caps_word       &kp LEFT             &kp RIGHT                   &kp SPACE         &tog 2                 &kp LS(LA(LC(LG(B))))      &none  &kp ENTER      &kp BACKSPACE                  &kp DOWN_ARROW    &kp UP_ARROW          &kp LBKT          &kp RBKT            &kp LA(F12)
+&kp LG(NUMBER_1)  &kp GRAVE          &caps_word       &kp LEFT             &kp RIGHT                   &kp SPACE         &tog 2                 &kp LS(LA(LC(LG(B))))      &mo 4  &kp ENTER      &kp BACKSPACE                  &kp DOWN_ARROW    &kp UP_ARROW          &kp LBKT          &kp RBKT            &kp LA(F12)
             >;
         };
 
@@ -172,11 +172,11 @@
         sym {
             display-name = "sym";
             bindings = <
-&trans     &trans            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans             &trans         &trans                                                                   &trans  &trans             &trans   &trans  &trans  &trans     &trans
-&trans     &kp LEFT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp RIGHT_BRACKET  &kp SEMICOLON  &trans                                                                   &trans  &trans             &trans   &trans  &trans  &trans     &trans
-&trans     &kp CARET         &kp EQUAL             &kp UNDER              &kp DOLLAR         &trans         &trans     &kp BACKSLASH        &trans      &trans  &trans               &trans  &kp DOUBLE_QUOTES  &kp TAB  &trans  &trans  &kp ENTER  &trans
-&kp TILDE  &kp LESS_THAN     &kp PIPE              &kp MINUS              &kp GREATER_THAN   &kp SLASH                                      &trans      &trans                               &kp SQT            &trans   &trans  &trans  &trans     &tog 3
-&trans     &trans            &trans                &trans                 &trans                            &kp SPACE  &toggle_tap 3 COLON  &trans      &trans  &toggle_tap 3 ENTER  &trans                     &trans   &trans  &trans  &trans     &trans
+&trans     &trans            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans             &trans         &trans                                                                             &trans  &trans             &trans   &trans  &trans  &trans     &trans
+&trans     &kp LEFT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp RIGHT_BRACKET  &kp SEMICOLON  &trans                                                                             &trans  &trans             &trans   &trans  &trans  &trans     &trans
+&trans     &kp CARET         &kp EQUAL             &kp UNDER              &kp DOLLAR         &trans         &trans               &kp BACKSLASH        &trans      &trans  &trans               &trans  &kp DOUBLE_QUOTES  &kp TAB  &trans  &trans  &kp ENTER  &trans
+&kp TILDE  &kp LESS_THAN     &kp PIPE              &kp MINUS              &kp GREATER_THAN   &kp SLASH                                                &trans      &trans                               &kp SQT            &trans   &trans  &trans  &trans     &tog 3
+&trans     &trans            &trans                &trans                 &trans                            &toggle_tap 3 SPACE  &toggle_tap 3 COLON  &trans      &trans  &toggle_tap 3 ENTER  &trans                     &trans   &trans  &trans  &trans     &trans
             >;
         };
 
