@@ -51,12 +51,6 @@
             layers = <0 1>;
         };
 
-        sym {
-            bindings = <&sym_en>;
-            key-positions = <43 30>;
-            layers = <0 1 3 2>;
-        };
-
         d_quotes {
             bindings = <&kp LS(DOUBLE_QUOTES)>;
             key-positions = <48 49>;
