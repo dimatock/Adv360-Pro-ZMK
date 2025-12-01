@@ -41,13 +41,24 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 46 47 48 49 50 51 60 61 62 63 64>;
         };
 
-        space_enter: space_enter {
+        vim_ctrl_j: vim_ctrl_j {
             compatible = "zmk,behavior-mod-morph";
-            label = "SPACE_ENTER";
-            bindings = <&kp SPACE>, <&kp ENTER>;
+            label = "VIM_CTRL_J";
+            bindings = <&kp S>, <&kp J>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_LCTL)>;
+            keep-mods = <(MOD_LCTL)>;
+        };
+
+        vim_ctrl_k: vim_ctrl_k {
+            compatible = "zmk,behavior-mod-morph";
+            label = "VIM_CTRL_K";
+            bindings = <&kp T>, <&kp K>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+            keep-mods = <(MOD_LCTL)>;
         };
     };
 
