@@ -4,6 +4,7 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 &lt { tapping-term-ms = <130>; };
@@ -202,6 +203,16 @@
 &trans  &trans  &kp LEFT      &kp DOWN  &kp RIGHT  &kp M   &kp NUMBER_8  &trans          &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans
 &trans  &trans  &trans        &trans    &kp F      &trans                                &trans      &trans                  &trans  &trans  &trans  &trans     &trans     &trans
 &trans  &trans  &trans        &trans    &trans             &kp SPACE     &kp LEFT_SHIFT  &trans      &trans  &trans  &trans          &trans  &trans  &trans     &trans     &trans
+            >;
+        };
+
+        mouse {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                            &trans  &trans  &trans  &trans     &trans   &trans    &trans
+&trans  &kp Q   &kp W   &kp E   &kp R   &kp T   &trans                                            &trans  &kp Y   &kp U   &kp I      &kp O    &kp P     &kp BSLH
+&trans  &kp A   &kp S   &kp D   &kp F   &kp G   &trans     &trans     &trans      &trans  &trans  &trans  &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp APOS
+&trans  &kp Z   &kp X   &kp C   &kp V   &kp B                         &trans      &trans                  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &tog 7
+&trans  &trans  &trans  &trans  &trans          &mkp LCLK  &mkp RCLK  &trans      &trans  &trans  &trans          &trans  &trans     &trans   &trans    &trans
             >;
         };
     };
