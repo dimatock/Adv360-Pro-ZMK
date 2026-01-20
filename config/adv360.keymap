@@ -139,7 +139,7 @@
 &kp TAB           &kp Q       &kp W       &kp F       &kp P       &kp B      &kp LA(LC(LEFT))                                                                                    &kp LA(LC(RIGHT))  &kp J       &kp L           &kp U         &kp Y       &kp SEMICOLON  &kp BSLH
 &to_ru            &kp A       &kp R       &kp S       &kp T       &kp G      &kp LA(LC(R))     &kp LEFT_GUI  &kp LEFT_ALT               &kp LG(SPACE)          &kp LEFT_CONTROL  &kp LA(LC(ENTER))  &kp M       &kp N           &kp E         &kp I       &kp O          &kp SQT
 &sk LEFT_SHIFT    &kp Z       &kp X       &kp C       &kp D       &kp V                                      &kp LG(LEFT_CONTROL)       &kp LC(LEFT_ALT)                                            &kp K       &kp H           &kp COMMA     &kp DOT     &kp FSLH       &toggle_tap 7 LEFT_ALT
-&kp LG(NUMBER_1)  &kp GRAVE   &caps_word  &kp LEFT    &kp RIGHT              &kp SPACE         &mo 2         &kp LS(LA(LC(LG(B))))      &kp LS(LA(LC(LG(K))))  &lt 3 ENTER       &kp BACKSPACE                  &kp DOWN_ARROW  &kp UP_ARROW  &kp LBKT    &kp RBKT       &kp LA(F12)
+&kp LG(NUMBER_1)  &kp GRAVE   &kp CAPS    &kp LEFT    &kp RIGHT              &kp SPACE         &mo 2         &kp LS(LA(LC(LG(B))))      &kp LS(LA(LC(LG(K))))  &lt 3 ENTER       &kp BACKSPACE                  &kp DOWN_ARROW  &kp UP_ARROW  &kp LBKT    &kp RBKT       &kp LA(F12)
             >;
         };
 
