@@ -34,7 +34,6 @@
 
         hm_l_pinky: home_row_mod_left_pinky {
             compatible = "zmk,behavior-hold-tap";
-            label = "HRM_L_PINKY";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <300>; // Increased to 300ms: pinky can "stick" without consequences
@@ -43,12 +42,10 @@
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <KEYS_R THUMBS>; // Shift will ONLY trigger in combination with the Right hand
-            hold-trigger-on-release; // Wait for release: critical for flavor="balanced"
         };
 
         hm_r_pinky: home_row_mod_right_pinky {
             compatible = "zmk,behavior-hold-tap";
-            label = "HRM_R_PINKY";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <300>;
@@ -57,7 +54,6 @@
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <KEYS_L THUMBS>; // Shift will ONLY trigger in combination with the Left hand
-            hold-trigger-on-release;
         };
 
         // -----------------------------------------------------------------------------------------
@@ -67,7 +63,6 @@
 
         hm_l_ring: home_row_mod_left_ring {
             compatible = "zmk,behavior-hold-tap";
-            label = "HRM_L_RING";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>; // "Timeless" standard: 280ms
@@ -76,12 +71,10 @@
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <KEYS_R THUMBS>;
-            hold-trigger-on-release;
         };
 
         hm_r_ring: home_row_mod_right_ring {
             compatible = "zmk,behavior-hold-tap";
-            label = "HRM_R_RING";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
@@ -90,7 +83,6 @@
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <KEYS_L THUMBS>;
-            hold-trigger-on-release;
         };
 
         // -----------------------------------------------------------------------------------------
@@ -101,7 +93,6 @@
 
         hm_l_index: home_row_mod_left_index {
             compatible = "zmk,behavior-hold-tap";
-            label = "HRM_L_INDEX";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <250>; // Reduced to 250ms: fast finger
@@ -110,12 +101,10 @@
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <KEYS_R THUMBS>;
-            hold-trigger-on-release;
         };
 
         hm_r_index: home_row_mod_right_index {
             compatible = "zmk,behavior-hold-tap";
-            label = "HRM_R_INDEX";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <250>;
@@ -124,7 +113,6 @@
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <KEYS_L THUMBS>;
-            hold-trigger-on-release;
         };
     };
 
@@ -135,31 +123,43 @@
             bindings = <&esc_en>;
             key-positions = <16 17>;
             layers = <0 1 2>;
+            require-prior-idle-ms = <100>;
+            timeout-ms = <40>;
         };
 
         d_quotes {
             bindings = <&kp LS(DOUBLE_QUOTES)>;
             key-positions = <48 49>;
+            require-prior-idle-ms = <100>;
+            timeout-ms = <40>;
         };
 
         s_quotes {
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <57 56>;
+            require-prior-idle-ms = <100>;
+            timeout-ms = <40>;
         };
 
         lparen {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <23 24>;
+            require-prior-idle-ms = <100>;
+            timeout-ms = <40>;
         };
 
         lcurly {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <55 56>;
+            require-prior-idle-ms = <100>;
+            timeout-ms = <40>;
         };
 
         lbracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <49 50>;
+            require-prior-idle-ms = <100>;
+            timeout-ms = <40>;
         };
     };
 
@@ -168,49 +168,42 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&to_en &kp GRAVE &kp GRAVE &kp GRAVE &kp LS(RET) &kp LG(V) &kp LS(ENTER) &kp GRAVE &kp GRAVE &kp GRAVE>;
-            label = "CODE_MD";
         };
 
         to_ru: to_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&to 1 &kp LC(LS(N2))>;
-            label = "TO_RU";
         };
 
         to_en: to_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&to 0 &kp LC(LS(N1))>;
-            label = "TO_EN";
         };
 
         esc_en: esc_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp ESCAPE &to_en>;
-            label = "ESC_EN";
         };
 
         sym_en: sym_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&to_en &to 3>;
-            label = "SYM_EN";
         };
 
         to_en_kp: to_en_kp {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings = <&to_en &kp LC(LS(NUMBER_1)) &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_EN_KP";
         };
 
         toggle_tap: toggle_tap {
             compatible = "zmk,behavior-macro-two-param";
             #binding-cells = <2>;
             bindings = <&macro_param_1to1 &tog MACRO_PLACEHOLDER &macro_param_2to1 &kp MACRO_PLACEHOLDER>;
-            label = "TOGGLE_TAP";
         };
     };
 
@@ -222,7 +215,7 @@
             bindings = <
 &kp EQUAL         &kp LS(N1)           &kp LS(N2)             &kp LS(N3)                 &kp LS(N4)          &kp PRCNT  &tog 6                                                                                              &mo 5              &kp LS(N6)  &kp LS(N7)             &kp LS(N8)          &kp LS(N9)              &kp LS(N0)           &kp MINUS
 &kp TAB           &kp Q                &kp W                  &kp F                      &kp P               &kp B      &kp LA(LC(LEFT))                                                                                    &kp LA(LC(RIGHT))  &kp J       &kp L                  &kp U               &kp Y                   &kp SEMICOLON        &kp BSLH
-&to_ru            &hm_l_pinky LSHFT A  &hm_l_ring LEFT_ALT R  &hm_l_ring LEFT_CONTROL S  &hm_l_index LGUI T  &kp G      &kp LA(LC(R))     &kp LEFT_GUI  &kp LEFT_ALT               &kp LG(SPACE)          &kp LEFT_CONTROL  &kp LA(LC(ENTER))  &kp M       &hm_r_ring LEFT_GUI N  &hm_r_ring LCTRL E  &hm_r_pinky LEFT_ALT I  &hm_r_pinky RSHFT O  &kp SQT
+&to_ru            &hm_l_pinky LSHFT A  &hm_l_ring LEFT_ALT R  &hm_l_ring LEFT_CONTROL S  &hm_l_index LGUI T  &kp G      &kp LA(LC(R))     &kp LEFT_GUI  &kp LEFT_ALT               &kp LG(SPACE)          &kp LEFT_CONTROL  &kp LA(LC(ENTER))  &kp M       &hm_r_index LEFT_GUI N  &hm_r_ring LCTRL E  &hm_r_ring LEFT_ALT I  &hm_r_pinky RSHFT O  &kp SQT
 &sk LEFT_SHIFT    &kp Z                &kp X                  &kp C                      &kp D               &kp V                                      &kp LG(LEFT_CONTROL)       &kp LC(LEFT_ALT)                                            &kp K       &kp H                  &kp COMMA           &kp DOT                 &kp FSLH             &toggle_tap 7 LEFT_ALT
 &kp LG(NUMBER_1)  &kp GRAVE            &kp CAPS               &kp LEFT                   &kp RIGHT                      &kp SPACE         &mo 2         &kp LS(LA(LC(LG(B))))      &kp LS(LA(LC(LG(A))))  &lt 3 ENTER       &kp BACKSPACE                  &kp DOWN_ARROW         &kp UP_ARROW        &kp LBKT                &kp RBKT             &kp LA(F12)
             >;
