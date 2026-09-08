@@ -198,7 +198,7 @@
 &kp TAB           &kp Q                &kp W                  &kp E                      &kp R               &kp T   &kp LA(LC(LEFT))                                                                              &kp LA(LC(RIGHT))  &kp Y   &kp U                   &kp I               &kp O                  &kp P                   &kp BSLH
 &kp CAPS          &hm_l_pinky LSHFT A  &hm_l_ring LEFT_ALT S  &hm_l_ring LEFT_CONTROL D  &hm_l_index LGUI F  &kp G   &kp LA(LC(R))     &kp LEFT_GUI  &kp LEFT_ALT              &kp LG(SPACE)     &kp LEFT_CONTROL  &kp LA(LC(ENTER))  &kp H   &hm_r_index LEFT_GUI J  &hm_r_ring LCTRL K  &hm_r_ring LEFT_ALT L  &hm_r_pinky RSHFT SEMI  &kp SQT
 &kp LEFT_SHIFT    &kp Z                &kp X                  &kp C                      &kp V               &kp B                                   &kp LG(LEFT_CONTROL)      &kp LC(LEFT_ALT)                                       &kp N   &kp M                   &kp COMMA           &kp DOT                &kp FSLH                &kp RIGHT_SHIFT
-&kp LG(NUMBER_1)  &kp GRAVE            &kp CAPS               &kp LEFT                   &kp RIGHT                   &kp SPACE         &mo 1         &kp LG(B)                 &kp LG(ENTER)     &kp ENTER         &kp BACKSPACE              &kp DOWN_ARROW          &kp UP_ARROW        &kp LBKT               &kp RBKT                &kp LA(F12)
+&kp LG(NUMBER_1)  &kp GRAVE            &kp CAPS               &kp LEFT                   &kp RIGHT                   &kp SPACE         &mo 1         &kp LG(T)                 &kp LG(ENTER)     &kp ENTER         &kp BACKSPACE              &kp DOWN_ARROW          &kp UP_ARROW        &kp LBKT               &kp RBKT                &kp LA(F12)
             >;
         };
 
