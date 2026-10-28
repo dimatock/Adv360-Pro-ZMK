@@ -24,47 +24,46 @@
         #include "version.dtsi"
 
         // -----------------------------------------------------------------------------------------
-        // 1. CONFIG FOR PINKIES: Keys A (LShift) and ; (RShift)
+        // 1. CONFIG FOR PINKIES: Keys A and ; (Alt)
         // -----------------------------------------------------------------------------------------
-        // Goal: Compensate for slow press and release.
-        // Strategy: Maximum timing tolerance, strict positional filter.
+        // Calibrated timing plus a small margin, with a strict positional filter.
 
         hm_l_pinky: home_row_mod_left_pinky {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <300>; // Increased to 300ms: pinky can "stick" without consequences
-            quick-tap-ms = <175>; // Allows typing 'aa' quickly via double-tap
-            require-prior-idle-ms = <150>; // Blocks Shift on fast rolls
+            tapping-term-ms = <220>;
+            quick-tap-ms = <230>;
+            require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = <KEYS_R THUMBS>; // Shift will ONLY trigger in combination with the Right hand
+            hold-trigger-key-positions = <KEYS_R THUMBS>;
         };
 
         hm_r_pinky: home_row_mod_right_pinky {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <300>;
-            quick-tap-ms = <175>;
+            tapping-term-ms = <220>;
+            quick-tap-ms = <230>;
             require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = <KEYS_L THUMBS>; // Shift will ONLY trigger in combination with the Left hand
+            hold-trigger-key-positions = <KEYS_L THUMBS>;
         };
 
         // -----------------------------------------------------------------------------------------
-        // 2. CONFIG FOR RING/MIDDLE FINGERS: S, D, L, K (Ctrl, Alt)
+        // 2. CONFIG FOR RING FINGERS: S and L (GUI)
         // -----------------------------------------------------------------------------------------
-        // Goal: Balance between speed and reliability.
+        // Calibrated timing with a more protective prior-idle window.
 
         hm_l_ring: home_row_mod_left_ring {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>; // "Timeless" standard: 280ms
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <125>; // Slightly stricter than for pinky
+            tapping-term-ms = <230>;
+            quick-tap-ms = <230>;
+            require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <KEYS_R THUMBS>;
@@ -74,8 +73,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
+            tapping-term-ms = <230>;
+            quick-tap-ms = <230>;
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
 
@@ -83,18 +82,17 @@
         };
 
         // -----------------------------------------------------------------------------------------
-        // 3. CONFIG FOR INDEX FINGERS: F, J (GUI/Meta)
+        // 3. CONFIG FOR INDEX FINGERS: F and J (Ctrl)
         // -----------------------------------------------------------------------------------------
-        // Goal: Instant reaction and prevention of misfires when rolling to the center (G, H).
-        // Index fingers are the fastest, so idle timing must be aggressive.
+        // Calibrated timing with the shortest prior-idle window for fast rolls to G and H.
 
         hm_l_index: home_row_mod_left_index {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <250>; // Reduced to 250ms: fast finger
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <100>; // Very strict filter: any active typing blocks the mod
+            tapping-term-ms = <230>;
+            quick-tap-ms = <230>;
+            require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <KEYS_R THUMBS>;
@@ -104,8 +102,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <250>;
-            quick-tap-ms = <175>;
+            tapping-term-ms = <230>;
+            quick-tap-ms = <230>;
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
 
